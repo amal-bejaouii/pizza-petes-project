@@ -8,6 +8,7 @@ import Footer from "./compenant/footer/footer";
 import Signup from "./compenant/signup/signup";
 
 import { Routes, Route } from "react-router-dom";
+import PizzaList from "./compenant/PizzaList";
 
 // Composant qui représente la page d'accueil
 function HomePage() {
@@ -19,9 +20,10 @@ function HomePage() {
         <Header />
         <Acceuil />
       </section>
-
+<PizzaList />
       <Footer />
     </div>
+  
   );
 }
 
