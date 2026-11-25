@@ -13,7 +13,7 @@ function Acceuil() {
       <h1>
         Trouver la meilleure
         <br />
-        <span>Pizza pour vous!</span>
+        <span>Pizza à Bizerte!</span>
       </h1>
 
       <h2>
