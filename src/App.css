@@ -1,0 +1,226 @@
+
+/* ========================================
+   1. VARIABLES GLOBALES
+======================================== */
+
+:root {
+  --primary-color: #b51f2b;
+  --primary-dark: #86151e;
+  --secondary-color: #f5e9d5;
+  --text-color: #ffffff;
+  --dark-color: #222222;
+  --background-color: #fffaf4;
+
+  --font-title: Georgia, serif;
+  --font-text: Arial, sans-serif;
+}
+
+/* ========================================
+   2. RESET GLOBAL
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--background-color);
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ========================================
+   3. STRUCTURE PRINCIPALE
+======================================== */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ========================================
+   4. SECTION ACCUEIL
+======================================== */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: url("./assets/wallpaper.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Voile sombre pour améliorer la visibilité du texte */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+/* Contenu de la page d'accueil */
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 60px 10%;
+  color: var(--text-color);
+}
+
+.hero-content h1 {
+  font-family: var(--font-title);
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 550px;
+  margin-bottom: 30px;
+}
+
+/* ========================================
+   5. BOUTONS
+======================================== */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 28px;
+
+  border-radius: 5px;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+/* ========================================
+   6. FOOTER
+======================================== */
+
+.footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   7. RESPONSIVE DESIGN
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+  .hero-content {
+    padding: 40px 7%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content h2 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 11px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    text-align: center;
+  }
+}

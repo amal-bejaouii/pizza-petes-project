@@ -1,0 +1,92 @@
+.header {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  padding: 25px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Nouveau background du Header */
+  background: rgba(45, 10, 15, 0.75);
+
+  /* Effet blur */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* Petite séparation avec le body */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+.logo h2 {
+  color: white;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.logo span {
+  color: #e52b38;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: color 0.3s ease;
+}
+
+/* Effet au survol */
+
+.navbar a:hover {
+  color: #ff555f;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+}

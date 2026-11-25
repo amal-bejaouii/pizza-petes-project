@@ -1,0 +1,124 @@
+
+/* Page principale avec le même background que l'accueil */
+.signupPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  background-image:
+    linear-gradient(rgba(35, 0, 0, 0.72),
+                    rgba(35, 0, 0, 0.82)),
+    url("../../assets/wallpaper.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Conteneur du formulaire */
+.signupBox {
+  width: 100%;
+  max-width: 520px;
+  padding: 35px;
+
+  background: rgba(45, 10, 12, 0.94);
+  border: 1px solid rgba(255, 215, 150, 0.4);
+  border-radius: 16px;
+
+  color: white;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+.signupBox h1 {
+  text-align: center;
+  color: #f8d28a;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #eee;
+  margin-bottom: 25px;
+}
+
+/* Organisation des champs */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #f8d28a;
+}
+
+.inputGroup input {
+  padding: 12px 14px;
+  border: 1px solid #a77b64;
+  border-radius: 7px;
+  outline: none;
+
+  background: #fffaf5;
+  color: #2b1111;
+  font-size: 15px;
+}
+
+.inputGroup input:focus {
+  border: 2px solid #e8b95f;
+}
+
+/* Bouton de création */
+.createBtn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+
+  background: #bd202e;
+  color: white;
+  border: none;
+  border-radius: 7px;
+
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.createBtn:hover {
+  background: #e0ae59;
+  color: #321010;
+}
+
+/* Lien de connexion / accueil */
+.loginText {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+}
+
+.loginText a {
+  color: #f8d28a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.loginText a:hover {
+  text-decoration: underline;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 600px) {
+  .signupBox {
+    padding: 25px 18px;
+  }
+
+  .signupBox h1 {
+    font-size: 26px;
+  }
+}
