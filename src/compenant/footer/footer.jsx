@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './footer.module.css';
 
-// Importation du logo
+ 
 import logo from '../../assets/logo.png';
 
 function Footer() {
@@ -11,7 +11,7 @@ function Footer() {
 
       <div className={styles.footerContent}>
 
-        {/* 1. Présentation du restaurant */}
+         
         <div className={styles.footerSection}>
 
           <img
@@ -29,7 +29,7 @@ function Footer() {
 
         </div>
 
-        {/* 2. Nos localisations */}
+       
         <div className={styles.footerSection}>
 
           <h3>Nos Localisations</h3>
@@ -37,7 +37,7 @@ function Footer() {
               <a href="#" target="_blank">📍 Bizerte Centre Ville 7000 </a>
          </div>
 
-        {/* 3. Contact et WhatsApp */}
+         
         <div className={styles.footerSection}>
 
           <h3>Contact Us</h3>
@@ -56,7 +56,7 @@ function Footer() {
 
         </div>
 
-        {/* 4. Réseaux sociaux */}
+        
         <div className={styles.footerSection}>
 
           <h3>Follow Us</h3>
@@ -76,8 +76,7 @@ function Footer() {
         </div>
 
       </div>
-
-      {/* Copyright */}
+ 
       <div className={styles.footerBottom}>
         <p>© 2026 Pizza Pete's. All Rights Reserved.</p>
       </div>

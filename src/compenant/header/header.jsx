@@ -7,8 +7,6 @@ import styles from './header.module.css';
 function Header() {
   return (
     <header className={styles.header}>
-
-      {/* Logo du restaurant */}
       <div className={styles.logo}>
           <img
           src="/src/assets/logo.png"
@@ -16,8 +14,6 @@ function Header() {
          />
          <h2>Pizza Pete's<span>.</span></h2>
       </div>
-
-      {/* Barre de navigation */}
       <nav className={styles.navbar}>
         <a href="#accueil">Accueil</a>
         <a href="#menu">Menu</a>

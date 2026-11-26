@@ -2,7 +2,7 @@
 import "./App.css";
 
 import Header from "./compenant/header/header";
-import Acceuil from "./compenant/acceuil/acceuil";
+import Accueil from "./compenant/accueil/accueil";
 import Footer from "./compenant/footer/footer";
 import PizzaDetails from "./compenant/PizzaDetails/PizzaDetails";
 import Signup from "./compenant/signup/signup";
@@ -18,28 +18,38 @@ function HomePage() {
         <div className="hero-overlay"></div>
 
         <Header />
-        <Acceuil />
-      </section>
-<PizzaList />
+        <Accueil />
+      </section> 
       <Footer />
     </div>
   
   );
 }
 
+// Page indépendante du menu des pizzas
+function MenuPage() {
+  return (
+    <div className="app">
+      <Header />
+
+      <PizzaList />
+
+      <Footer />
+    </div>
+  );
+}
+
+
+
+
 // Composant principal de l'application
 function App() {
   return (
     <Routes>
-      {/* Route de la page d'accueil */}
-      <Route path="/" element={<HomePage />} />
-
-      {/* Route de la page d'inscription */}
-      <Route path="/signup" element={<Signup />} />
-      <Route
-      path="/pizza/:id"
-      element={<PizzaDetails />}
-/>
+       <Route path="/" element={<HomePage />} />
+       <Route path="/signup" element={<Signup />} />
+       <Route path="/pizza/:id" element={<PizzaDetails />}/>
+       <Route path="/menu" element={<MenuPage />} />
     
     </Routes>
   );

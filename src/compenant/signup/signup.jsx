@@ -1,9 +1,10 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./signup.module.css";
 
 function Signup() {
+  const navigate = useNavigate();
 
   // Stocker les valeurs saisies dans le formulaire
   const [formData, setFormData] = useState({
@@ -38,6 +39,7 @@ function Signup() {
     // Pour le moment, simulation côté frontend uniquement
     alert("Votre compte a été créé avec succès !");
 
+    navigate("/menu");
     // Vider le formulaire après la validation
     setFormData({
       nom: "",

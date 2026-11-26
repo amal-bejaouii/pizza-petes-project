@@ -1,7 +1,4 @@
 
-/* =====================================
-   SECTION ACCUEIL
-===================================== */
 
 .home {
   position: relative;
@@ -20,9 +17,6 @@
   color: white;
 }
 
-/* =====================================
-   SOUS-TITRE
-===================================== */
 
 .subtitle {
   color: #f5c979;
@@ -34,9 +28,6 @@
   margin-bottom: 22px;
 }
 
-/* =====================================
-   TITRE PRINCIPAL
-===================================== */
 
 .home h1 {
   font-family: Georgia, serif;
@@ -53,20 +44,12 @@
   color: #f5c979;
 }
 
-/* =====================================
-   DEUXIEME TITRE
-===================================== */
-
 .home h2 {
   font-size: 21px;
   font-weight: 500;
 
   margin-bottom: 15px;
 }
-
-/* =====================================
-   PARAGRAPHE
-===================================== */
 
 .home p {
   max-width: 520px;
@@ -78,10 +61,6 @@
 
   margin-bottom: 30px;
 }
-
-/* =====================================
-   BOUTONS
-===================================== */
 
 .buttons {
   display: flex;
@@ -104,8 +83,6 @@
   transition: all 0.3s ease;
 }
 
-/* Sign Up */
-
 .signup {
   background-color: #b51f2b;
   color: white;
@@ -118,7 +95,6 @@
   transform: translateY(-3px);
 }
 
-/* Login */
 
 .login {
   background-color: transparent;
@@ -132,8 +108,6 @@
   transform: translateY(-3px);
 }
 
-/* Explore Menu */
-
 .menu {
   background-color: #f5c979;
   color: #42191c;
@@ -146,9 +120,6 @@
   transform: translateY(-3px);
 }
 
-/* =====================================
-   RESPONSIVE DESIGN
-===================================== */
 
 @media screen and (max-width: 768px) {
 

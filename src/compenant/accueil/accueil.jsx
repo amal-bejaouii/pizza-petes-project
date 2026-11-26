@@ -1,10 +1,10 @@
 
-import styles from './acceuil.module.css';
+import styles from './accueil.module.css';
 import { Link } from "react-router-dom";
 
-function Acceuil() {
+function Accueil() {
   return (
-    <main className={styles.home} id="acceuil">
+    <main className={styles.home} id="accueil">
 
       <span className={styles.subtitle}>
         BIENVENUE CHEZ PIZZA PETE'S
@@ -13,7 +13,7 @@ function Acceuil() {
       <h1>
         Trouver la meilleure
         <br />
-        <span>Pizza à Bizerte!</span>
+        <span>Pizza pour vous!</span>
       </h1>
 
       <h2>
@@ -27,19 +27,18 @@ function Acceuil() {
       </p>
 
       <div className={styles.buttons}>
-
-        {/* Ouvrir la page d'inscription */}
+        
         <Link to="/signup" className={styles.signup}>
-          Sign Up
+          S'inscrire
         </Link>
 
         <a href="#login" className={styles.login}>
-          Login
+          Se connecter
         </a>
 
-        <a href="#menu" className={styles.menu}>
-          Explore Our Menu
-        </a>
+        <Link to="/menu" className={styles.menu}>
+          Découvrez notre menu
+        </Link>
 
       </div>
 
@@ -47,4 +46,4 @@ function Acceuil() {
   );
 }
 
-export default Acceuil;
+export default Accueil;
