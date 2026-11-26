@@ -1,6 +1,6 @@
 
 import "./PizzaList.css";
-
+import { Link } from "react-router-dom";
 import neptune from "../assets/images/thon.png";
 import margherita from "../assets/images/Margherita .png";
 import pepperoni from "../assets/images/pepperoni .png";
@@ -59,6 +59,12 @@ function PizzaList() {
             <span className="pizza-price">
               {pizza.prix.toFixed(3)} DT
             </span>
+              <Link
+              to={`/pizza/${pizza.id}`}
+              className="details-btn"
+            >
+              Voir les détails
+            </Link>
 
           </div>
         ))}

@@ -55,6 +55,22 @@
   font-weight: bold;
   margin-top: 20px;
 }
+.details-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #b51f2b;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #86151e;
+  transform: translateY(-3px);
+}
+
 
 @media (max-width: 600px) {
   .pizza-list {
