@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./compenant/header/header";
 import Acceuil from "./compenant/acceuil/acceuil";
 import Footer from "./compenant/footer/footer";
-
+import PizzaDetails from "./compenant/PizzaDetails/PizzaDetails";
 import Signup from "./compenant/signup/signup";
 
 import { Routes, Route } from "react-router-dom";
@@ -36,6 +36,11 @@ function App() {
 
       {/* Route de la page d'inscription */}
       <Route path="/signup" element={<Signup />} />
+      <Route
+      path="/pizza/:id"
+      element={<PizzaDetails />}
+/>
+    
     </Routes>
   );
 }

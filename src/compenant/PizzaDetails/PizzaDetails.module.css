@@ -1,0 +1,245 @@
+
+/* PAGE PRINCIPALE */
+
+.detailsPage {
+  min-height: 100vh;
+  padding: 60px 8%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fffaf4;
+}
+
+/* CONTENEUR PRINCIPAL */
+
+.detailsContainer {
+  width: 100%;
+  max-width: 1100px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  background-color: white;
+  padding: 35px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+/* INFORMATIONS */
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* SOUS-TITRE */
+
+.subtitle {
+  color: #b51f2b;
+
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+
+  margin-bottom: 12px;
+}
+
+/* NOM DE LA PIZZA */
+
+.infoSection h1 {
+  color: #42191c;
+
+  font-family: Georgia, serif;
+  font-size: 38px;
+
+  margin-bottom: 15px;
+}
+
+/* DESCRIPTION */
+
+.description {
+  color: #666;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+/* TITRES DES SECTIONS */
+
+.infoSection h2 {
+  color: #b51f2b;
+
+  font-size: 21px;
+
+  margin-bottom: 12px;
+}
+
+/* INGREDIENTS */
+
+.ingredientsList {
+  padding-left: 22px;
+  margin-bottom: 25px;
+}
+
+.ingredientsList li {
+  color: #555;
+
+  font-size: 15px;
+
+  margin-bottom: 9px;
+}
+
+/* CARACTERISTIQUES */
+
+.characteristics {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.characteristics p {
+  color: #555;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  margin-bottom: 12px;
+}
+
+.characteristics strong {
+  color: #42191c;
+  margin-right: 8px;
+}
+
+/* PRIX */
+
+.price {
+  color: #b51f2b;
+
+  font-size: 27px;
+  font-weight: bold;
+
+  margin-bottom: 25px;
+}
+
+/* BOUTON RETOUR */
+
+.backBtn {
+  display: inline-block;
+
+  padding: 13px 22px;
+
+  background-color: #b51f2b;
+  color: white;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: 0.3s ease;
+}
+
+.backBtn:hover {
+  background-color: #86151e;
+  transform: translateY(-3px);
+}
+
+/* PIZZA INTROUVABLE */
+
+.notFound {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.notFound h1 {
+  color: #b51f2b;
+}
+
+.notFound a {
+  color: #86151e;
+  text-decoration: none;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+  .detailsPage {
+    padding: 35px 5%;
+  }
+
+  .detailsContainer {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .imageSection img {
+    height: 300px;
+  }
+
+  .infoSection h1 {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .detailsPage {
+    padding: 20px 12px;
+  }
+
+  .detailsContainer {
+    padding: 18px;
+  }
+
+  .imageSection img {
+    height: 230px;
+  }
+
+  .infoSection h1 {
+    font-size: 26px;
+  }
+
+  .price {
+    font-size: 23px;
+  }
+
+  .backBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
